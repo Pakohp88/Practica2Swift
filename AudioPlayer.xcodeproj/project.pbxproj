@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF867E412916D96600B0C3BF /* MUSIC3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF867E402916D96600B0C3BF /* MUSIC3.mp3 */; };
+		DF867E452916D9DE00B0C3BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF867E432916D9DD00B0C3BF /* AVFoundation.framework */; };
+		DF867E462916D9DE00B0C3BF /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF867E442916D9DE00B0C3BF /* AVFAudio.framework */; };
+		DFED52892916E8EC00684E74 /* song.gif in Resources */ = {isa = PBXBuildFile; fileRef = DFED52882916E8EC00684E74 /* song.gif */; };
+		DFED528D2916E9C600684E74 /* UIImageAnimatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = DFED528C2916E9C600684E74 /* UIImageAnimatedGIF.m */; };
 		DFF6AFBF2916C94E00507973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6AFBE2916C94E00507973 /* AppDelegate.swift */; };
 		DFF6AFC12916C94E00507973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6AFC02916C94E00507973 /* SceneDelegate.swift */; };
 		DFF6AFC32916C94E00507973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6AFC22916C94E00507973 /* ViewController.swift */; };
@@ -16,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF867E402916D96600B0C3BF /* MUSIC3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = MUSIC3.mp3; path = ../../../Downloads/MUSIC3.mp3; sourceTree = "<group>"; };
+		DF867E432916D9DD00B0C3BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DF867E442916D9DE00B0C3BF /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		DFED52882916E8EC00684E74 /* song.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = song.gif; sourceTree = "<group>"; };
+		DFED528A2916E9C600684E74 /* AudioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFED528B2916E9C600684E74 /* UIImageAnimatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAnimatedGIF.h; sourceTree = "<group>"; };
+		DFED528C2916E9C600684E74 /* UIImageAnimatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageAnimatedGIF.m; sourceTree = "<group>"; };
 		DFF6AFBB2916C94E00507973 /* AudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF6AFBE2916C94E00507973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFF6AFC02916C94E00507973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF867E452916D9DE00B0C3BF /* AVFoundation.framework in Frameworks */,
+				DF867E462916D9DE00B0C3BF /* AVFAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF867E422916D9DD00B0C3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF867E442916D9DE00B0C3BF /* AVFAudio.framework */,
+				DF867E432916D9DD00B0C3BF /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DFF6AFB22916C94E00507973 = {
 			isa = PBXGroup;
 			children = (
 				DFF6AFBD2916C94E00507973 /* AudioPlayer */,
 				DFF6AFBC2916C94E00507973 /* Products */,
+				DF867E422916D9DD00B0C3BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +80,10 @@
 		DFF6AFBD2916C94E00507973 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DFED52882916E8EC00684E74 /* song.gif */,
+				DFED528B2916E9C600684E74 /* UIImageAnimatedGIF.h */,
+				DFED528C2916E9C600684E74 /* UIImageAnimatedGIF.m */,
+				DF867E402916D96600B0C3BF /* MUSIC3.mp3 */,
 				DFF6AFBE2916C94E00507973 /* AppDelegate.swift */,
 				DFF6AFC02916C94E00507973 /* SceneDelegate.swift */,
 				DFF6AFC22916C94E00507973 /* ViewController.swift */,
@@ -63,6 +91,7 @@
 				DFF6AFC72916C95300507973 /* Assets.xcassets */,
 				DFF6AFC92916C95300507973 /* LaunchScreen.storyboard */,
 				DFF6AFCC2916C95300507973 /* Info.plist */,
+				DFED528A2916E9C600684E74 /* AudioPlayer-Bridging-Header.h */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -99,6 +128,7 @@
 				TargetAttributes = {
 					DFF6AFBA2916C94E00507973 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -125,7 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF867E412916D96600B0C3BF /* MUSIC3.mp3 in Resources */,
 				DFF6AFCB2916C95300507973 /* LaunchScreen.storyboard in Resources */,
+				DFED52892916E8EC00684E74 /* song.gif in Resources */,
 				DFF6AFC82916C95300507973 /* Assets.xcassets in Resources */,
 				DFF6AFC62916C94E00507973 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF6AFC32916C94E00507973 /* ViewController.swift in Sources */,
+				DFED528D2916E9C600684E74 /* UIImageAnimatedGIF.m in Sources */,
 				DFF6AFBF2916C94E00507973 /* AppDelegate.swift in Sources */,
 				DFF6AFC12916C94E00507973 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FMFK298Y2K;
@@ -303,6 +337,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.php.ico.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioPlayer/AudioPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FMFK298Y2K;
@@ -331,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.php.ico.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioPlayer/AudioPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
