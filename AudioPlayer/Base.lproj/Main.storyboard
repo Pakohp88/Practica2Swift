@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p53-8I-OtO">
+                                <rect key="frame" x="0.0" y="194" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volumen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APG-n1-BPv">
+                                <rect key="frame" x="20" y="411" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqq-02-acQ">
+                                <rect key="frame" x="20" y="300" width="51" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2f-Qv-555"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-ud-20b">
+                                <rect key="frame" x="339.5" y="300" width="54.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZf-QC-7ix"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iiD-Ic-6pP">
+                                <rect key="frame" x="18" y="361" width="378" height="31"/>
+                                <connections>
+                                    <action selector="durationSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Mi-R0-ZuN"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MUh-1a-fhd">
+                                <rect key="frame" x="18" y="447" width="198" height="31"/>
+                                <connections>
+                                    <action selector="volumeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="aXV-r1-r8n"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p53-8I-OtO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Mp-Hs-0Pg"/>
+                            <constraint firstItem="wbw-ud-20b" firstAttribute="top" secondItem="p53-8I-OtO" secondAttribute="bottom" constant="70" id="7tV-1T-juK"/>
+                            <constraint firstItem="MUh-1a-fhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9sw-Xr-hEm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iiD-Ic-6pP" secondAttribute="trailing" constant="20" id="CS1-a4-l2I"/>
+                            <constraint firstItem="Aqq-02-acQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FSN-vt-cqc"/>
+                            <constraint firstItem="p53-8I-OtO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Nk7-9I-EV2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUh-1a-fhd" secondAttribute="trailing" constant="200" id="Qnw-vv-MAV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbw-ud-20b" secondAttribute="trailing" constant="20" id="WOa-is-Yan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p53-8I-OtO" secondAttribute="trailing" id="YV3-u6-ODP"/>
+                            <constraint firstItem="APG-n1-BPv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cPY-IX-pYv"/>
+                            <constraint firstItem="MUh-1a-fhd" firstAttribute="top" secondItem="APG-n1-BPv" secondAttribute="bottom" constant="15" id="hqv-PO-5cD"/>
+                            <constraint firstItem="iiD-Ic-6pP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jIz-4j-GNG"/>
+                            <constraint firstItem="iiD-Ic-6pP" firstAttribute="top" secondItem="Aqq-02-acQ" secondAttribute="bottom" constant="30" id="qBh-id-JdI"/>
+                            <constraint firstItem="APG-n1-BPv" firstAttribute="top" secondItem="iiD-Ic-6pP" secondAttribute="bottom" constant="20" id="uNu-PB-MU4"/>
+                            <constraint firstItem="Aqq-02-acQ" firstAttribute="top" secondItem="p53-8I-OtO" secondAttribute="bottom" constant="70" id="ufn-mP-Wtj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="Aqq-02-acQ" id="1MD-lw-Wwd"/>
+                        <outlet property="btnStop" destination="wbw-ud-20b" id="wJW-hE-xZD"/>
+                        <outlet property="sliderDuration" destination="iiD-Ic-6pP" id="ce6-fn-qRT"/>
+                        <outlet property="sliderVolume" destination="MUh-1a-fhd" id="tAY-rV-CZp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
