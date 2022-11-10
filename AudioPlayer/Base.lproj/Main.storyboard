@@ -56,20 +56,15 @@
                                     <action selector="volumeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="aXV-r1-r8n"/>
                                 </connections>
                             </slider>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="song.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ico-iw-cgS">
-                                <rect key="frame" x="20" y="457" width="374" height="205"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ico-iw-cgS" secondAttribute="trailing" constant="20" id="0OL-2i-gSI"/>
                             <constraint firstItem="p53-8I-OtO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Mp-Hs-0Pg"/>
                             <constraint firstItem="wbw-ud-20b" firstAttribute="top" secondItem="p53-8I-OtO" secondAttribute="bottom" constant="70" id="7tV-1T-juK"/>
                             <constraint firstItem="MUh-1a-fhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9sw-Xr-hEm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iiD-Ic-6pP" secondAttribute="trailing" constant="20" id="CS1-a4-l2I"/>
                             <constraint firstItem="Aqq-02-acQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FSN-vt-cqc"/>
-                            <constraint firstItem="ico-iw-cgS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K1p-JY-ecy"/>
                             <constraint firstItem="p53-8I-OtO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Nk7-9I-EV2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUh-1a-fhd" secondAttribute="trailing" constant="200" id="Qnw-vv-MAV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbw-ud-20b" secondAttribute="trailing" constant="20" id="WOa-is-Yan"/>
@@ -80,14 +75,11 @@
                             <constraint firstItem="iiD-Ic-6pP" firstAttribute="top" secondItem="Aqq-02-acQ" secondAttribute="bottom" constant="30" id="qBh-id-JdI"/>
                             <constraint firstItem="APG-n1-BPv" firstAttribute="top" secondItem="iiD-Ic-6pP" secondAttribute="bottom" constant="20" id="uNu-PB-MU4"/>
                             <constraint firstItem="Aqq-02-acQ" firstAttribute="top" secondItem="p53-8I-OtO" secondAttribute="bottom" constant="70" id="ufn-mP-Wtj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ico-iw-cgS" secondAttribute="bottom" constant="200" id="uzG-lL-HXw"/>
-                            <constraint firstItem="ico-iw-cgS" firstAttribute="top" secondItem="MUh-1a-fhd" secondAttribute="bottom" constant="100" id="v04-b9-fO4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnPlay" destination="Aqq-02-acQ" id="1MD-lw-Wwd"/>
                         <outlet property="btnStop" destination="wbw-ud-20b" id="wJW-hE-xZD"/>
-                        <outlet property="iVSound" destination="ico-iw-cgS" id="HUi-YC-sZG"/>
                         <outlet property="sliderDuration" destination="iiD-Ic-6pP" id="ce6-fn-qRT"/>
                         <outlet property="sliderVolume" destination="MUh-1a-fhd" id="tAY-rV-CZp"/>
                     </connections>
@@ -98,7 +90,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="song.gif" width="480" height="258"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
